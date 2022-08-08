@@ -19,7 +19,7 @@ namespace TaskEstimationCalculator.Core.Commands
             _repository = repository;
         }
 
-        public Task Execute()
+        public Task Run()
         {
             try
             {
@@ -29,7 +29,7 @@ namespace TaskEstimationCalculator.Core.Commands
             {
                 Console.WriteLine(ex.Message);
 
-                return Execute();
+                return Run();
             }
         }
 

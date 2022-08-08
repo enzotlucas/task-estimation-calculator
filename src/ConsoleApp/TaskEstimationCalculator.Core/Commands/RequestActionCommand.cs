@@ -15,13 +15,13 @@ namespace TaskEstimationCalculator.Core.Commands
             _actions = Enum.GetValues(typeof(CommandEnum)).Cast<CommandEnum>().ToList();
         }
 
-        public async Task Execute()
+        public async Task Run()
         {
             var selectedAction = RequestAction();
 
             var command = _factory.GetCommand(selectedAction);
 
-            await command.Execute();
+            await command.Run();
         }
 
         private CommandEnum RequestAction()

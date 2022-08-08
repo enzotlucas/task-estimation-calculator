@@ -2,6 +2,6 @@
 {
     public interface ICommand
     {
-        Task Execute();
+        Task Run();
     }
 }

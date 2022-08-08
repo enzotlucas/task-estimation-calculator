@@ -37,7 +37,6 @@ namespace TaskEstimationCalculator.Core.Builders
             return this;
         }
 
-        public TaskEstimation Build()
-            => _taskEstimation;
+        public TaskEstimation Build() => _taskEstimation;
     }
 }

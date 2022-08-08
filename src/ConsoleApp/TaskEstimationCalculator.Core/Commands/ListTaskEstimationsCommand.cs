@@ -12,7 +12,7 @@ namespace TaskEstimationCalculator.Core.Commands
             _repository = repository;
         }
 
-        public Task Execute()
+        public Task Run()
         {
             var tasks = _repository.GetAll();
 
